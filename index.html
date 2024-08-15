@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Idades</title>
+</head>
+<body>
+    <h1>Verificação de Idades</h1>
+    <p>Digite a idade de 5 pessoas:</p>
+    <form onsubmit="event.preventDefault(); verificarIdades();">
+        <label for="pessoa1">Idade da Pessoa 1:</label>
+        <input type="number" id="idade1" required><br><br>
+
+        <label for="pessoa2">Idade da Pessoa 2:</label>
+        <input type="number" id="idade2" required><br><br>
+
+        <label for="pessoa3">Idade da Pessoa 3:</label>
+        <input type="number" id="idade3" required><br><br>
+
+        <label for="pessoa4">Idade da Pessoa 4:</label>
+        <input type="number" id="idade4" required><br><br>
+
+        <label for="pessoa5">Idade da Pessoa 5:</label>
+        <input type="number" id="idade5" required><br><br>
+
+        <button type="submit">Classificar</button>
+    </form>
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+</body>
+</html>
